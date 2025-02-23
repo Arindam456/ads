@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSense Integration Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <h1>Welcome to my app!</h1>
+        <button id="showAdBtn">Show Ad</button>
+    </div>
+
+    <!-- Google AdSense In-Article Ad -->
+    <div id="adsense-ad" style="display:none;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8407039781989754" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-8407039781989754"
+             data-ad-slot="3560510058"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <div id="adModal" class="ad-modal">
+        <div class="ad-content">
+            <h2>Advertisement</h2>
+            <p>This is an advertisement!</p>
+            <button id="closeAdBtn">Close Ad</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
